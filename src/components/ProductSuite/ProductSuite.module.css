@@ -1,0 +1,22 @@
+.ProductSuite {
+  padding-block: var(--s-6);
+}
+
+.ProductSuiteTitle {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text);
+  margin: 0 0 var(--s-5);
+}
+
+.ProductSuiteGrid {
+  display: grid;
+  gap: var(--s-5);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .ProductSuiteGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

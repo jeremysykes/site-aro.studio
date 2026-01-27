@@ -1,0 +1,35 @@
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductCardIcon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: var(--s-2);
+}
+
+.ProductCardTitle {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--text);
+  margin: 0 0 var(--s-2);
+}
+
+.ProductCardDescription {
+  font-size: var(--text-base);
+  color: var(--text-muted);
+  margin: 0 0 var(--s-4);
+  line-height: 1.5;
+}
+
+.ProductCardLink {
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--gradient-to);
+  text-decoration: none;
+}
+
+.ProductCardLink:hover {
+  text-decoration: underline;
+}

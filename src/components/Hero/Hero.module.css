@@ -1,0 +1,19 @@
+.Hero {
+  padding-block: var(--s-7) var(--s-8);
+}
+
+.HeroHeadline {
+  font-size: var(--text-hero);
+  font-weight: var(--font-weight-bold);
+  color: var(--text);
+  margin: 0 0 var(--s-4);
+  line-height: 1.2;
+}
+
+.HeroDescription {
+  font-size: var(--text-lg);
+  color: var(--text-muted);
+  margin: 0 0 var(--s-6);
+  line-height: 1.5;
+  max-width: 36ch;
+}

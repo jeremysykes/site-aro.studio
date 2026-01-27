@@ -1,0 +1,35 @@
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s-2) var(--s-4);
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-base);
+  color: var(--text-on-gradient);
+  background: var(--gradient-button);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+
+.Button:hover:not(:disabled) {
+  filter: brightness(0.92);
+  color: var(--text-on-gradient);
+  text-decoration: none;
+}
+
+.Button:focus {
+  outline: none;
+}
+
+.Button:focus-visible {
+  box-shadow: var(--shadow-sm), var(--focus-ring);
+}
+
+.Button:disabled {
+  opacity: var(--disabled-opacity);
+  cursor: not-allowed;
+}
