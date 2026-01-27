@@ -30,3 +30,7 @@ export const WithHref: Story = {
 export const WithTo: Story = {
   args: { children: 'Home', to: '/' },
 }
+
+export const Cta: Story = {
+  args: { children: 'Contact Us', to: '/contact', variant: 'cta' },
+}

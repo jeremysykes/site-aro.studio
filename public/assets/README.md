@@ -4,7 +4,8 @@ Planned static assets for Component and ProductCard/ProductSuite. Add real files
 
 ## Logo
 
-- **Header:** `logo.svg` or `logo.png`
+- **Aro icon (rainbow gradient circle + arrow):** `logo-aro.png` — transparent; use as header icon or favicon.
+- **Header (full):** `logo.svg` or `logo.png` (logomark + “Aro Studio” text when combined).
 
 ## Product icons
 

@@ -1,0 +1,87 @@
+.Overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.Drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 280px;
+  background: var(--bg-elevated);
+  color: var(--text);
+  box-shadow: var(--shadow-card);
+  padding: var(--s-5);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+}
+
+.CloseButton {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  font-size: var(--text-base);
+  padding: var(--s-2);
+}
+
+.CloseButton:hover {
+  color: var(--gradient-to);
+}
+
+.List {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.List a {
+  color: var(--text);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-extra-light);
+}
+
+.List a:hover {
+  color: var(--gradient-to);
+}
+
+.Cta {
+  margin-top: var(--s-2);
+}
+
+.CtaLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s-2) var(--s-4);
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-base);
+  color: var(--text-on-gradient);
+  background: var(--gradient-button-cta);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+
+.CtaLink:hover {
+  filter: brightness(0.92);
+  color: var(--text-on-gradient);
+  text-decoration: none;
+}
+
+.CtaLink:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-sm), var(--focus-ring);
+}

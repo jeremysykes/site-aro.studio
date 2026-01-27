@@ -6,7 +6,7 @@ alwaysApply: false
 
 # Styles and Tokens
 
-**tokens.css:** CSS custom properties for brand, theme (light/dark via `html[data-theme='dark']`), typography, spacing, radius, focus, disabled. Responsive overrides in `@media (min-width: 768px)` and `1024px`.
+**tokens.css:** CSS custom properties for brand, theme (light/dark via `html[data-theme='dark']`), typography, spacing, radius, focus, disabled. Gradient variants: `--gradient-button` (primary diagonal), `--gradient-button-cta` (vertical lighter-to-darker purple for CTAs); both use themed stop tokens. Header: `--header-bg` stacks `--header-gradient-glow` (radial soft glow) and `--header-gradient-base` (horizontal purple); `--header-base-1`–`4` and `--header-glow-1`–`3` are themed in dark mode. Responsive overrides in `@media (min-width: 768px)` and `1024px`.
 
 **ui.css:** Base reset, `body`, links, layout (`.container`, `.grid`, `.grid--2`), shared primitives (`.btn`, `.card`, `.input`, etc.). Use token variables only.
 

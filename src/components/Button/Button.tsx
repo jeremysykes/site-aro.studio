@@ -7,6 +7,7 @@ export interface ButtonProps {
   to?: string
   disabled?: boolean
   className?: string
+  variant?: 'primary' | 'cta'
 }
 
 export default function Button({
@@ -15,8 +16,12 @@ export default function Button({
   to,
   disabled = false,
   className,
+  variant = 'primary',
 }: ButtonProps) {
-  const cls = `${styles.Button} ${className || ''}`.trim()
+  const cls = [styles.Button, variant === 'cta' && styles.ButtonCta, className]
+    .filter(Boolean)
+    .join(' ')
+    .trim()
   if (href) {
     return (
       <a href={href} className={cls}>

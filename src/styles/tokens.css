@@ -6,6 +6,40 @@
   --gradient-to: #8f55e6;
   --gradient-button: linear-gradient(135deg, var(--gradient-from) 0%, var(--gradient-to) 100%);
 
+  /* CTA gradient: vertical lighter-to-darker purple for primary CTAs (e.g. Contact Us).
+     Stops are themed in html[data-theme="dark"]. */
+  --gradient-cta-top: #6d74eb;
+  --gradient-cta-bottom: #5146d7;
+  --gradient-button-cta: linear-gradient(
+    to bottom,
+    var(--gradient-cta-top) 0%,
+    var(--gradient-cta-bottom) 100%
+  );
+
+  /* Header background: base gradient + soft glow. Stops and glow colors are themed in html[data-theme="dark"]. */
+  --header-base-1: #3a155f;
+  --header-base-2: #5a2a82;
+  --header-base-3: #6a36a6;
+  --header-base-4: #4b2fa8;
+  --header-gradient-base: linear-gradient(
+    90deg,
+    var(--header-base-1) 0%,
+    var(--header-base-2) 40%,
+    var(--header-base-3) 70%,
+    var(--header-base-4) 100%
+  );
+  --header-glow-1: rgba(255, 120, 220, 0.35);
+  --header-glow-2: rgba(180, 90, 255, 0.25);
+  --header-glow-3: rgba(120, 60, 200, 0.15);
+  --header-gradient-glow: radial-gradient(
+    ellipse 120% 80% at 50% 0%,
+    var(--header-glow-1) 0%,
+    var(--header-glow-2) 25%,
+    var(--header-glow-3) 45%,
+    transparent 70%
+  );
+  --header-bg: var(--header-gradient-glow), var(--header-gradient-base);
+
   /* Theme (color) */
   --text: #1a1a1a;
   --text-muted: #5a5a5a;
@@ -18,6 +52,8 @@
 
   /* Typography */
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
   --font-weight-normal: 400;
   --font-weight-bold: 600;
   --text-hero: 2.25rem;
@@ -60,7 +96,16 @@ html[data-theme="dark"] {
   --border: #404040;
   --gradient-from: #3b4a8d;
   --gradient-to: #6b3fb8;
+  --gradient-cta-top: #5c63d4;
+  --gradient-cta-bottom: #4239b8;
   --gradient-button: linear-gradient(135deg, var(--gradient-from) 0%, var(--gradient-to) 100%);
+  --header-base-1: #2a0f4a;
+  --header-base-2: #441d6b;
+  --header-base-3: #522a85;
+  --header-base-4: #3d2385;
+  --header-glow-1: rgba(255, 120, 220, 0.28);
+  --header-glow-2: rgba(180, 90, 255, 0.2);
+  --header-glow-3: rgba(120, 60, 200, 0.12);
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.25);
 }

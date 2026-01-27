@@ -7,7 +7,11 @@
   font-weight: var(--font-weight-bold);
   font-size: var(--text-base);
   color: var(--text-on-gradient);
-  background: var(--gradient-button);
+  background: linear-gradient(
+    to top right,
+    var(--gradient-from) 0%,
+    var(--gradient-to) 100%
+  );
   border: none;
   border-radius: var(--radius-sm);
   cursor: pointer;
@@ -32,4 +36,8 @@
 .Button:disabled {
   opacity: var(--disabled-opacity);
   cursor: not-allowed;
+}
+
+.ButtonCta {
+  background: var(--gradient-button-cta);
 }
