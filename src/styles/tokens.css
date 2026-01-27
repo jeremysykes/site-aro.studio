@@ -1,1 +1,80 @@
-/* Design system agent: add tokens (brand, theme, typography, spacing, etc.) */
+/* Design tokens: brand, theme, typography, spacing, radius, focus, disabled */
+
+:root {
+  /* Brand and gradient */
+  --gradient-from: #4e65b5;
+  --gradient-to: #8f55e6;
+  --gradient-button: linear-gradient(135deg, var(--gradient-from) 0%, var(--gradient-to) 100%);
+
+  /* Theme (color) */
+  --text: #1a1a1a;
+  --text-muted: #5a5a5a;
+  --bg: #ffffff;
+  --bg-elevated: #ffffff;
+  --text-on-gradient: #ffffff;
+  --border: #d0d0d0;
+  --focus-ring: 0 0 0 2px var(--gradient-to);
+  --disabled-opacity: 0.5;
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+  --text-hero: 2.25rem;
+  --text-xl: 1.5rem;
+  --text-lg: 1.25rem;
+  --text-base: 1rem;
+  --text-sm: 0.875rem;
+
+  /* Spacing (4px base) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-card: 20px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  /* Layout */
+  --container-max: 1200px;
+}
+
+/* Dark theme */
+html[data-theme="dark"] {
+  --text: #e8e8e8;
+  --text-muted: #a0a0a0;
+  --bg: #1a1a1a;
+  --bg-elevated: #252525;
+  --text-on-gradient: #ffffff;
+  --border: #404040;
+  --gradient-from: #3b4a8d;
+  --gradient-to: #6b3fb8;
+  --gradient-button: linear-gradient(135deg, var(--gradient-from) 0%, var(--gradient-to) 100%);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive: 768px */
+@media (min-width: 768px) {
+  :root {
+    --text-hero: 2.75rem;
+  }
+}
+
+/* Responsive: 1024px */
+@media (min-width: 1024px) {
+  :root {
+    --text-hero: 3rem;
+  }
+}
