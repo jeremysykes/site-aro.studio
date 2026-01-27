@@ -1,0 +1,15 @@
+---
+description: Vitest, RTL, and Storybook expectations
+globs: "**/*.test.tsx,**/*.stories.tsx,**/test/**"
+alwaysApply: false
+---
+
+# Testing and Storybook
+
+**Vitest:** `globals: true`, `environment: 'jsdom'`, `setupFiles: './src/test/setup.ts'`. Setup: `import '@testing-library/jest-dom'`; add `import '../i18n/config'` if i18n is used.
+
+**Tests:** `describe('ComponentName', () => { it('renders without crashing', () => { ... }) })`. Use `render`, `screen.getByRole`, `expect(...).toBeInTheDocument()`. Co-locate `*.test.tsx` next to the component.
+
+**Storybook:** Stories: `../src/**/*.stories.@(js|jsx|ts|tsx|mdx)`. Preview: import `tokens.css`, `ui.css`, `index.css`, i18n when used; disable default backgrounds; `a11y` test `'todo'`. Decorator: apply `data-theme` and language; wrapper uses `var(--bg)`, `var(--text)`.
+
+**Stories:** `Meta<typeof Component>`, `StoryObj<typeof Component>`, `tags: ['autodocs']`, `title: 'Components/ComponentName'`. Provide `Default` and variant stories. Addons: a11y, docs.

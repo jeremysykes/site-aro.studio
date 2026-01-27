@@ -1,0 +1,15 @@
+---
+description: Tokens, base CSS, and CSS Modules usage
+globs: "**/*.css"
+alwaysApply: false
+---
+
+# Styles and Tokens
+
+**tokens.css:** CSS custom properties for brand, theme (light/dark via `html[data-theme='dark']`), typography, spacing, radius, focus, disabled. Responsive overrides in `@media (min-width: 768px)` and `1024px`.
+
+**ui.css:** Base reset, `body`, links, layout (`.container`, `.grid`, `.grid--2`), shared primitives (`.btn`, `.card`, `.input`, etc.). Use token variables only.
+
+**index.css:** `@import './styles/tokens.css'`, `@import './styles/ui.css'`, minimal reset for `*`, `body`, `#root`.
+
+**Components:** Use CSS Modules (`*.module.css`). Reference tokens (e.g. `var(--s-4)`, `var(--radius-pill)`, `var(--text)`, `var(--bg)`). Class name matches component: `styles.ComponentName`.
