@@ -1,0 +1,28 @@
+.ProductDetail {
+  padding-block: var(--s-6);
+}
+
+.ProductDetailTitle {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text);
+  margin: 0 0 var(--s-4);
+}
+
+.ProductDetailDescription {
+  font-size: var(--text-base);
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0 0 var(--s-5);
+}
+
+.ProductDetailNotFound {
+  font-size: var(--text-lg);
+  color: var(--text-muted);
+  margin: 0 0 var(--s-5);
+}
+
+.ProductDetailBack {
+  font-weight: var(--font-weight-bold);
+  color: var(--gradient-to);
+}
