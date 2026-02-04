@@ -10,7 +10,7 @@ const withRouter = (Story: React.FC) => (
 )
 
 const meta: Meta<typeof Hero> = {
-  title: 'Components/Hero',
+  title: 'Organism/Hero',
   tags: ['autodocs'],
   component: Hero,
   decorators: [withRouter],

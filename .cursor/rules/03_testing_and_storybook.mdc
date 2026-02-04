@@ -12,4 +12,4 @@ alwaysApply: false
 
 **Storybook:** Stories: `../src/**/*.stories.@(js|jsx|ts|tsx|mdx)`. Preview: import `tokens.css`, `ui.css`, `index.css`, i18n when used; disable default backgrounds; `a11y` test `'todo'`. Decorator: apply `data-theme` and language; wrapper uses `var(--bg)`, `var(--text)`.
 
-**Stories:** `Meta<typeof Component>`, `StoryObj<typeof Component>`, `tags: ['autodocs']`, `title: 'Components/ComponentName'`. Provide `Default` and variant stories. Addons: a11y, docs.
+**Stories:** `Meta<typeof Component>`, `StoryObj<typeof Component>`, `tags: ['autodocs']`, `title: 'Atom/ComponentName'` (or `Molecule/...` / `Organism/...` per atomic design). Use Atom for primitives (Button, Card), Molecule for composed units (ProductCard), Organism for sections (Header, Hero, ProductSuite). Provide `Default` and variant stories. Addons: a11y, docs.
