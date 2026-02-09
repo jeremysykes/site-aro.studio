@@ -1,4 +1,12 @@
 .Pricing {
+  padding-block: var(--s-6);
+}
+
+.PricingLead {
+  font-size: var(--text-lg);
+  color: var(--text-muted);
+  margin: 0 0 var(--s-6);
+  line-height: 1.5;
 }
 
 .PricingGrid {

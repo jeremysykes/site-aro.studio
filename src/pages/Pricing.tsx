@@ -5,6 +5,9 @@ export default function Pricing() {
   return (
     <main className={`container ${styles.Pricing}`.trim()}>
       <SectionTitle as="h1">Plans</SectionTitle>
+      <p className={styles.PricingLead}>
+        Choose the plan that fits your team.
+      </p>
       <div className={styles.PricingGrid}>
         <PricingCard
           title="Free"

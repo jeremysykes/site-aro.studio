@@ -26,7 +26,7 @@ const preview: Preview = {
           'Templates',
           ['MainLayout', 'HomeTemplate'],
           'Pages',
-          ['Docs', 'Pricing'],
+          ['Docs', 'Pricing', 'Contact'],
           '*',
         ],
       },

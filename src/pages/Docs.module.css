@@ -1,4 +1,38 @@
 .Docs {
+  padding-block: var(--s-6);
+}
+
+.DocsProse {
+  max-width: 65ch;
+}
+
+.DocsLead {
+  font-size: var(--text-lg);
+  color: var(--text-muted);
+  margin: 0 0 var(--s-6);
+  line-height: 1.5;
+  max-width: 42ch;
+}
+
+.DocsSection {
+  margin-top: 0;
+}
+
+.DocsSection:not(:first-child) {
+  margin-top: var(--s-7);
+}
+
+.DocsSection p {
+  margin: 0 0 var(--s-4);
+  line-height: 1.5;
+}
+
+.DocsSection code {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-sm);
+  padding: var(--s-1) var(--s-2);
+  font-size: var(--text-sm);
+  font-family: var(--font-sans);
 }
 
 .DocsList {
@@ -8,5 +42,5 @@
 }
 
 .DocsList li {
-  margin: var(--s-1) 0;
+  margin: var(--s-2) 0;
 }

@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { Header } from './components'
-import { Home, NotFound, ProductDetail, Docs, Pricing } from './pages'
+import { Home, NotFound, ProductDetail, Docs, Pricing, Contact } from './pages'
 import styles from './App.module.css'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <Route path="/products/:slug" element={<ProductDetail />} />
         <Route path="/docs" element={<Docs />} />
         <Route path="/pricing" element={<Pricing />} />
-        <Route path="/contact" element={<div>Contact</div>} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
