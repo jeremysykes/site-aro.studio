@@ -9,7 +9,7 @@ const withRouter = (Story: React.FC) => (
 )
 
 const meta: Meta<typeof Button> = {
-  title: 'Atom/Button',
+  title: 'Atoms/Button',
   tags: ['autodocs'],
   component: Button,
   decorators: [withRouter],

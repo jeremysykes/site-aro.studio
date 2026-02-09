@@ -1,6 +1,8 @@
 // * UI
 export { default as Button } from './Button'
 export { default as Card } from './Card'
+export { default as SectionTitle } from './SectionTitle'
+export { default as PricingCard } from './PricingCard'
 // * Navigation
 export { default as Header } from './Header/Header'
 // * Sections

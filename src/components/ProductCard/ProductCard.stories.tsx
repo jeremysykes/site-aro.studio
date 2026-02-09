@@ -10,7 +10,7 @@ const withRouter = (Story: React.FC) => (
 )
 
 const meta: Meta<typeof ProductCard> = {
-  title: 'Molecule/ProductCard',
+  title: 'Molecules/ProductCard',
   tags: ['autodocs'],
   component: ProductCard,
   decorators: [withRouter],

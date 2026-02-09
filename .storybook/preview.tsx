@@ -11,6 +11,26 @@ const preview: Preview = {
     a11y: {
       test: 'todo',
     },
+    options: {
+      storySort: {
+        method: 'alphabetical',
+        order: [
+          'Intro',
+          'Getting Started',
+          'Atoms',
+          ['Button', 'Card', 'SectionTitle'],
+          'Molecules',
+          ['ProductCard', 'PricingCard'],
+          'Organisms',
+          ['Header', 'Hero', 'ProductSuite'],
+          'Templates',
+          ['MainLayout', 'HomeTemplate'],
+          'Pages',
+          ['Docs', 'Pricing'],
+          '*',
+        ],
+      },
+    },
   },
   globalTypes: {
     theme: {

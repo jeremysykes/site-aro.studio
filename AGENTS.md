@@ -19,6 +19,7 @@ When working in a domain, follow the section for that agent. Respect Owns / Does
 11. Navigation interaction
 12. Routing
 13. Page building
+14. Product designer
 
 ---
 
@@ -34,7 +35,7 @@ When working in a domain, follow the section for that agent. Respect Owns / Does
 - **Owns:** `src/styles/tokens.css`, `src/styles/ui.css`; the **content** of `src/index.css` (imports of tokens + ui). Conventions: token names, `html[data-theme]`, breakpoints, components use `var(--...)` only.
 - **Does not:** `public/` or images, Storybook, i18n, components, `App.module.css` (Scaffolding), or `vite.config` `test` block.
 - **Depends on:** Scaffolding.
-- **Collaborates with:** Storybook, Component building, Assets.
+- **Collaborates with:** Storybook, Component building, Assets, Product designer (guidelines for tokens and base styles).
 
 ## 3. Storybook integration
 
@@ -90,7 +91,7 @@ When working in a domain, follow the section for that agent. Respect Owns / Does
 - **Owns:** `src/components/**` **except** `Header`, `Nav`, `MobileMenu` (or equivalent). `Hero`, `ProductSuite`, `ProductCard`, `Button`, `Card`, etc. Each: `ComponentName.tsx`, `ComponentName.module.css`, `ComponentName.test.tsx`, `ComponentName.stories.tsx`, `index.ts`. `src/components/index.ts` barrel. Uses `var(--...)` only; does not change `tokens.css`/`ui.css`.
 - **Does not:** `src/types`, `src/api`, `src/utils`, `tokens`/`ui`, routes, pages, `Header`/`Nav`/`MobileMenu` behavior, i18n config (only `t()`; i18n adds keys).
 - **Depends on:** Scaffolding, Design system; optionally i18n, Types; Testing/Storybook for patterns.
-- **Collaborates with:** i18n, Page, Navigation (e.g. shared `Button`), Assets (img paths).
+- **Collaborates with:** i18n, Page, Navigation (e.g. shared `Button`), Assets (img paths), Product designer (standards for components).
 
 ## 11. Navigation interaction
 
@@ -111,4 +112,13 @@ When working in a domain, follow the section for that agent. Respect Owns / Does
 - **Owns:** `src/pages/**` and `src/pages/index.ts`. Composes `Header`, `Hero`, `ProductSuite`, etc. Page-level `*.test.tsx`, `*.stories.tsx`.
 - **Does not:** `Route` definitions, `src/types`, design tokens, i18n config, `Header`/nav behavior implementation.
 - **Depends on:** Scaffolding, Design system, Component building, Navigation (for Header), optionally i18n, Types.
-- **Collaborates with:** Routing (provides `element` for each route), Component, i18n.
+- **Collaborates with:** Routing (provides `element` for each route), Component, i18n, Product designer (layout and composition standards).
+
+---
+
+## 14. Product designer
+
+- **Owns:** Design guidelines and standards: `.cursor/rules/06_product_design.md` (or equivalent); optional `docs/design-standards.md`. Authority on trends, accessibility (e.g. WCAG 2.1 AA), and UX standards for UI, tokens, and layout. Does not implement code.
+- **Does not:** `tokens.css`/`ui.css` (Design system), components or pages (Component building, Page building), routes, Storybook, Assets, API, Types, Utils, Testing.
+- **Depends on:** none.
+- **Collaborates with:** Design system (tokens align with guidelines), Component building (components follow standards), Page building (layouts follow patterns).

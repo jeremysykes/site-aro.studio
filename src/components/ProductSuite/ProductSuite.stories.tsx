@@ -10,7 +10,7 @@ const withRouter = (Story: React.FC) => (
 )
 
 const meta: Meta<typeof ProductSuite> = {
-  title: 'Organism/ProductSuite',
+  title: 'Organisms/ProductSuite',
   tags: ['autodocs'],
   component: ProductSuite,
   decorators: [withRouter],

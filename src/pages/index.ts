@@ -1,3 +1,5 @@
 export { default as Home } from './Home'
 export { default as ProductDetail } from './ProductDetail'
 export { default as NotFound } from './NotFound'
+export { default as Docs } from './Docs'
+export { default as Pricing } from './Pricing'

@@ -1,0 +1,13 @@
+.MainLayout {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.MainLayoutMain {
+  padding: var(--s-4) 0;
+}
+
+.MainLayoutPlaceholder {
+  margin: 0;
+  color: var(--text-muted);
+}

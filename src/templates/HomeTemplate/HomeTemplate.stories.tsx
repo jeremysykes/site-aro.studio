@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { BrowserRouter } from 'react-router-dom'
-import Header from './Header'
+import HomeTemplate from './HomeTemplate'
 
 const withRouter = (Story: React.FC) => (
   <BrowserRouter>
@@ -8,15 +8,17 @@ const withRouter = (Story: React.FC) => (
   </BrowserRouter>
 )
 
-const meta: Meta<typeof Header> = {
-  title: 'Organisms/Header',
+const meta: Meta<typeof HomeTemplate> = {
+  title: 'Templates/HomeTemplate',
   tags: ['autodocs'],
-  component: Header,
+  component: HomeTemplate,
   decorators: [withRouter],
 }
 
 export default meta
 
-type Story = StoryObj<typeof Header>
+type Story = StoryObj<typeof HomeTemplate>
 
-export const Default: Story = {}
+export const Default: Story = {
+  args: {},
+}

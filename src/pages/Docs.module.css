@@ -1,0 +1,12 @@
+.Docs {
+}
+
+.DocsList {
+  list-style: disc;
+  padding-left: var(--s-5);
+  margin: 0 0 var(--s-4);
+}
+
+.DocsList li {
+  margin: var(--s-1) 0;
+}

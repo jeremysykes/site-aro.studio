@@ -13,13 +13,9 @@ export default function ProductCard({ item }: ProductCardProps) {
   return (
     <Card className={styles.ProductCard}>
       <img
-        src={`/assets/${item.slug}.svg`}
+        src="/assets/placeholder.svg"
         alt=""
         className={styles.ProductCardIcon}
-        onError={(e) => {
-          e.currentTarget.onerror = null
-          e.currentTarget.src = '/assets/placeholder.svg'
-        }}
       />
       <h3 className={styles.ProductCardTitle}>{item.title}</h3>
       <p className={styles.ProductCardDescription}>{item.description}</p>
