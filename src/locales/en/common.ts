@@ -9,44 +9,44 @@ export default {
     contactUs: 'Contact Us',
   },
   hero: {
-    headline: 'The Design System Suite for Enterprise Teams',
+    headline: 'Make Your Design System\nObservable, Safe, and Operable',
     description:
-      'Build, validate, and ship design tokens and components with a unified suite of tools.',
+      'A modular desktop suite that works alongside Figma, Storybook, and your codebase — adding the safety and coherence layer those tools don\'t cover.',
     ctaText: 'Get Started',
   },
   productSuite: {
     sectionTitle: 'Our Product Suite',
     learnMore: 'Learn More',
     items: {
-      tokenEditor: {
-        title: 'Token Editor',
+      inspect: {
+        title: 'Aro Inspect',
         description:
-          'Create and edit design tokens with a visual editor. Manage colors, typography, and spacing in one place.',
+          'See what you actually have. Scan your design system across Figma, code, and Storybook to produce a real, current inventory.',
       },
-      validator: {
-        title: 'Validator',
+      guard: {
+        title: 'Aro Guard',
         description:
-          'Validate design tokens and component usage across your codebase. Catch inconsistencies before they ship.',
+          'Stop breaking changes before they ship. Enforce deterministic rules and contracts to make design systems safe to change.',
       },
-      figmaSync: {
-        title: 'Figma Sync',
+      align: {
+        title: 'Aro Align',
         description:
-          'Keep Figma and your design system in sync. Export tokens and components bidirectionally.',
+          'Make sure design and code tell the same story. Detect drift between Figma, code, and Storybook.',
       },
-      packageBuilder: {
-        title: 'Package Builder',
+      ship: {
+        title: 'Aro Ship',
         description:
-          'Build and publish design system packages. Generate code for web, iOS, and Android.',
+          'Turn your system into something teams can actually use. Package your design system into deterministic, consumable artifacts.',
       },
-      proofPublisher: {
-        title: 'Proof Publisher',
+      docs: {
+        title: 'Aro Docs',
         description:
-          'Publish and share design specs and proofs. Collaborate with stakeholders and developers.',
+          'Documentation that doesn\'t rot. Generate documentation directly from real system state.',
       },
-      aiRunner: {
-        title: 'AI Runner',
+      flow: {
+        title: 'Aro Flow',
         description:
-          'Automate design system tasks with AI. Generate variations, suggest improvements, and more.',
+          'Change the system safely, step by step. Guided workflows with automatic validation and PR-ready outputs.',
       },
     },
   },

@@ -7,9 +7,18 @@ export interface HeroProps {
 }
 
 export default function Hero({ content }: HeroProps) {
+  const headlineParts = content.headline.split('\n')
+
   return (
     <section className={styles.Hero}>
-      <h1 className={styles.HeroHeadline}>{content.headline}</h1>
+      <h1 className={styles.HeroHeadline}>
+        {headlineParts.map((part, i) => (
+          <span key={i}>
+            {part}
+            {i < headlineParts.length - 1 && <br />}
+          </span>
+        ))}
+      </h1>
       <p className={styles.HeroDescription}>{content.description}</p>
       <Button to={content.ctaHref}>{content.ctaText}</Button>
     </section>

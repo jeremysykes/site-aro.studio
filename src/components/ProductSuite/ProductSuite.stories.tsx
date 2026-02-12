@@ -21,9 +21,12 @@ export default meta
 type Story = StoryObj<typeof ProductSuite>
 
 const sampleItems: ProductSuiteItem[] = [
-  { id: 'token-editor', title: 'Token Editor', description: 'Create and edit design tokens.', slug: 'token-editor' },
-  { id: 'validator', title: 'Validator', description: 'Validate design tokens.', slug: 'validator' },
-  { id: 'figma-sync', title: 'Figma Sync', description: 'Keep Figma in sync.', slug: 'figma-sync' },
+  { id: 'inspect', title: 'Aro Inspect', description: 'See what you actually have.', slug: 'inspect' },
+  { id: 'guard', title: 'Aro Guard', description: 'Stop breaking changes before they ship.', slug: 'guard' },
+  { id: 'align', title: 'Aro Align', description: 'Make sure design and code tell the same story.', slug: 'align' },
+  { id: 'ship', title: 'Aro Ship', description: 'Turn your system into something teams can actually use.', slug: 'ship' },
+  { id: 'docs', title: 'Aro Docs', description: "Documentation that doesn't rot.", slug: 'docs' },
+  { id: 'flow', title: 'Aro Flow', description: 'Change the system safely, step by step.', slug: 'flow' },
 ]
 
 export const Default: Story = {

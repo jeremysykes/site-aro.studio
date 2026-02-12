@@ -2,12 +2,12 @@ import type { TFunction } from 'i18next'
 import type { ProductSuiteItem } from '../types'
 
 const CONFIG: { slug: string; i18nKey: string }[] = [
-  { slug: 'token-editor', i18nKey: 'tokenEditor' },
-  { slug: 'validator', i18nKey: 'validator' },
-  { slug: 'figma-sync', i18nKey: 'figmaSync' },
-  { slug: 'package-builder', i18nKey: 'packageBuilder' },
-  { slug: 'proof-publisher', i18nKey: 'proofPublisher' },
-  { slug: 'ai-runner', i18nKey: 'aiRunner' },
+  { slug: 'inspect', i18nKey: 'inspect' },
+  { slug: 'guard', i18nKey: 'guard' },
+  { slug: 'align', i18nKey: 'align' },
+  { slug: 'ship', i18nKey: 'ship' },
+  { slug: 'docs', i18nKey: 'docs' },
+  { slug: 'flow', i18nKey: 'flow' },
 ]
 
 export function getProductSuiteItems(t: TFunction): ProductSuiteItem[] {

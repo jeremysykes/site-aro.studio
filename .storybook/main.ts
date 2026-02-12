@@ -9,5 +9,6 @@ const config: StorybookConfig = {
     '@storybook/addon-docs',
   ],
   framework: { name: '@storybook/react-vite', options: {} },
+  core: { disableProjectJson: true },
 }
 export default config;

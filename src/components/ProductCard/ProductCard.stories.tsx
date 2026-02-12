@@ -21,23 +21,23 @@ export default meta
 type Story = StoryObj<typeof ProductCard>
 
 const defaultItem: ProductSuiteItem = {
-  id: 'token-editor',
-  title: 'Token Editor',
-  description: 'Create and edit design tokens.',
-  slug: 'token-editor',
+  id: 'inspect',
+  title: 'Aro Inspect',
+  description: 'See what you actually have.',
+  slug: 'inspect',
 }
 
 export const Default: Story = {
   args: { item: defaultItem },
 }
 
-export const Validator: Story = {
+export const Guard: Story = {
   args: {
     item: {
-      id: 'validator',
-      title: 'Validator',
-      description: 'Validate design tokens and component usage.',
-      slug: 'validator',
+      id: 'guard',
+      title: 'Aro Guard',
+      description: 'Stop breaking changes before they ship.',
+      slug: 'guard',
     },
   },
 }

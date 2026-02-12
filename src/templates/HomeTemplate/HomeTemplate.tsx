@@ -14,31 +14,49 @@ export interface HomeTemplateProps {
 }
 
 const defaultHeroContent = {
-  headline: 'Design tokens, validated and in sync',
+  headline: 'Make Your Design System\nObservable, Safe, and Operable',
   description:
-    'Create, validate, and publish design tokens across your tools and teams.',
+    'A modular desktop suite that works alongside Figma, Storybook, and your codebase — adding the safety and coherence layer those tools don\'t cover.',
   ctaText: 'Get Started',
   ctaHref: '/#get-started',
 }
 
 const defaultProductSuiteItems: ProductSuiteItem[] = [
   {
-    id: 'token-editor',
-    title: 'Token Editor',
-    description: 'Create and edit design tokens.',
-    slug: 'token-editor',
+    id: 'inspect',
+    title: 'Aro Inspect',
+    description: 'See what you actually have.',
+    slug: 'inspect',
   },
   {
-    id: 'validator',
-    title: 'Validator',
-    description: 'Validate design tokens.',
-    slug: 'validator',
+    id: 'guard',
+    title: 'Aro Guard',
+    description: 'Stop breaking changes before they ship.',
+    slug: 'guard',
   },
   {
-    id: 'figma-sync',
-    title: 'Figma Sync',
-    description: 'Keep Figma in sync.',
-    slug: 'figma-sync',
+    id: 'align',
+    title: 'Aro Align',
+    description: 'Make sure design and code tell the same story.',
+    slug: 'align',
+  },
+  {
+    id: 'ship',
+    title: 'Aro Ship',
+    description: 'Turn your system into something teams can actually use.',
+    slug: 'ship',
+  },
+  {
+    id: 'docs',
+    title: 'Aro Docs',
+    description: "Documentation that doesn't rot.",
+    slug: 'docs',
+  },
+  {
+    id: 'flow',
+    title: 'Aro Flow',
+    description: 'Change the system safely, step by step.',
+    slug: 'flow',
   },
 ]
 

@@ -3,10 +3,10 @@ import { BrowserRouter } from 'react-router-dom'
 import ProductCard from './ProductCard'
 
 const item = {
-  id: 'token-editor',
-  title: 'Token Editor',
-  description: 'Create and edit design tokens.',
-  slug: 'token-editor',
+  id: 'inspect',
+  title: 'Aro Inspect',
+  description: 'See what you actually have.',
+  slug: 'inspect',
 }
 
 describe('ProductCard', () => {
